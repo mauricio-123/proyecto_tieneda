@@ -32,12 +32,12 @@ productosBd.forEach(function(producto){
 
      //img con la clase card-img-top
     let foto=document.createElement("img")
-    foto.classList.add("card-img-top")
+    foto.classList.add("card-img-top","h-50","p-1")
     foto.src=producto.foto
 
     //estilo del nombre
     let titulo=document.createElement("h4")
-    titulo.classList.add("text-center")
+    titulo.classList.add("text-center","card-body")
     titulo.textContent=producto.nombre
 
     //estilo del precio
@@ -46,14 +46,14 @@ productosBd.forEach(function(producto){
     rprecio.textContent=producto.precio
 
     //estilo de la descripcion
-    let rdescripcion=document.createElement("h5")
-    rdescripcion.classList.add("text-center")
+    let rdescripcion=document.createElement("p")
+    rdescripcion.classList.add("text-center","m-3")
     rdescripcion.textContent=producto.descripcion
 
     //creando un boton
     let boton=document.createElement("button")
     boton.setAttribute("type","button")
-    boton.classList.add("btn","btn-warning","mx-4","mb-4")
+    boton.classList.add("btn","btn-warning","m-2","bg-info")
     boton.textContent="ver producto"
 
 

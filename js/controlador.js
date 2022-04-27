@@ -3,6 +3,8 @@ import {llenarTienda} from './tienda_productos.js'
 //traer el archivo de ampliar informacion 
 import {ampliarInformacionProducto} from './ampliarinfo.js'
 
+
+
 //creo un producto vacio
 let producto={}
 //llamando a tienda llenado
