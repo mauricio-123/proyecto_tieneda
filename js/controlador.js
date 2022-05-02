@@ -64,6 +64,8 @@ limpiar.addEventListener("click",function(){
 
 })
 
+
+
 //rutina para ver el carrito
 let botonVerCarrito=document.getElementById("vercarrito")
 botonVerCarrito.addEventListener("click",function(){
@@ -71,25 +73,53 @@ botonVerCarrito.addEventListener("click",function(){
     //recorrer el carrito y pintar los productos
     let base=document.getElementById("basecarro")
 
+    
+
     base.innerHTML=""
 
     carrito.forEach(function(producto){
+
+       
+     
 
         let fila=document.createElement("div")
         fila.classList.add("row")
 
         let columna1=document.createElement("div")
-        columna1.classList.add("col-4")
+        columna1.classList.add("col-5")
 
         let columna2=document.createElement("div")
-        columna2.classList.add("col-8")
+        columna2.classList.add("col-7")
 
         let foto=document.createElement("img")
         foto.classList.add("w-100","img-fluid")
         foto.src=producto.foto
 
+        let descripcion=document.createElement("div")
+        descripcion.classList.add("text-center")
+        descripcion.textContent="precio unidad"
+
+        let rdescripcion=document.createElement("div")
+        rdescripcion.classList.add("text-center")
+        rdescripcion.textContent="precio en dolares"
+
+
+       let titulo=document.createElement("h4")
+        titulo.classList.add("text-center","card-body")
+        titulo.textContent=producto.nombre
+        
+        //estilo del precio
+        let precio=document.createElement("h4")
+        precio.classList.add("text-center","card-body")
+        precio.textContent=producto.rprecio+" cop"
+
+       
         //PADRES E HIJOS
         columna1.appendChild(foto)
+        columna2.appendChild(titulo)
+        columna2.appendChild(descripcion)
+        columna1.appendChild(rdescripcion)
+        columna2.appendChild(precio)
         fila.appendChild(columna1)
         fila.appendChild(columna2)
         base.appendChild(fila)
@@ -101,3 +131,5 @@ botonVerCarrito.addEventListener("click",function(){
     modalcompra.show()
 
 })
+
+

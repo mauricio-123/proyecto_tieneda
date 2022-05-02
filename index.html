@@ -37,11 +37,7 @@
                             <h1 class="mb-5" class="animate__animated animate__bounce">Comodidad y Precio en un mismo lugar </h1>
                             <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
                                 <!-- Email address input-->
-                                <div class="row">
-                                    <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Añadir tu Email para enviar el catalogo completo. " data-sb-validations="required,email" />
-                                       <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email no es valido.</div>
-                                    </div>
+                                <div>
                                     <div class="col-auto"><a href="./tienda.html"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Tienda</button></a></div>
                                 </div>
                                 <!-- Submit success message-->
@@ -189,47 +185,26 @@
                     </div>
                 </div>
             </div>
-            <!--inicio de base de dato-->
-        </section>
-             <div class="mb-3">
-                <label  class="form-label">Email address</label>
-                 <input type="email" class="form-control" id="email1" aria-describedby="emailHelp">
-             </div>
-            <div class="mb-3">
-            <label  class="form-label">password</label>
-            <input type="password" class="form-control" id="password" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <button id="registro" type="submit" class="btn btn-primary">Entrar</button>
-            </div>
-
-        </section>
+           
         <!-- Call to Action-->
         <section class="call-to-action text-white text-center" id="signup">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
-                        <h2 class="mb-4">para mas informacion dejanos tu numero y uno de nuestro asesores se comunicaran con vos.</h2>
+                        <h2 class="mb-4">Registro</h2>
                         <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
+                            <!-- inicio de base de datos-->
                             <div class="row">
                                 <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="number" placeholder="Numero celular" data-sb-validations="required,Numero" />
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">El numero es invalido.</div>
+                                    <label  class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email1" aria-describedby="emailHelp">
+                                        <label  class="form-label">password</label>
+                                        <input type="password" class="form-control" id="password" aria-describedby="emailHelp">                            
                                 </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Guardar</button></div>
-                            </div>
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Gracias por escrivir tu numero</div>
-                                    <p>En breve nos comunicaremos con tigo.</p>
+                                <div class="mb-4">
+                                    <button id="registro" type="submit" class="btn btn-primary">Entrar</button>
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                         </form>
                     </div>
                 </div>
@@ -291,7 +266,7 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * *                               formulario de registro                    * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
          <!--enlase con firebase-->
          <script src="./js/firebase.js" type="module"></script>

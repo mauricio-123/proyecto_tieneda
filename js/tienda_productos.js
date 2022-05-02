@@ -16,14 +16,14 @@ let productosBd = [
     
     //1.Creo una variable para almacenar la base sobre la cual voy a pintar
         let fila=document.getElementById("fila")
-productosBd.forEach(function(producto){
+        productosBd.forEach(function(producto){
   
 
      //2. pintando etiquetas
 
       //div con la clase col
-    let columna=document.createElement("div")
-    columna.classList.add("col")
+        let columna=document.createElement("div")
+         columna.classList.add("col")
 
     //div con las clases card h-100
     let targeta=document.createElement("div")
@@ -41,9 +41,9 @@ productosBd.forEach(function(producto){
     titulo.textContent=producto.nombre
 
     //estilo del precio
-    let rprecio=document.createElement("h4")
+    let rprecio=document.createElement("h3")
     rprecio.classList.add("text-center")
-    rprecio.textContent=producto.precio
+    rprecio.textContent=producto.precio + " cop"
 
     //estilo de la descripcion
     let rdescripcion=document.createElement("p")
