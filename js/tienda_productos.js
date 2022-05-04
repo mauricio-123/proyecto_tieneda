@@ -43,7 +43,7 @@ let productosBd = [
     //estilo del precio
     let rprecio=document.createElement("h3")
     rprecio.classList.add("text-center")
-    rprecio.textContent=producto.precio + " cop"
+    rprecio.textContent=producto.precio 
 
     //estilo de la descripcion
     let rdescripcion=document.createElement("p")
